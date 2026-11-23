@@ -7,8 +7,8 @@ the PWA (manifest, service worker, caching, native-feature access) is written by
 > **Course:** Development of Progressive Mobile Applications L1 — WTI.SIE.IN.7014
 > **Status:** Week 1 — project foundation (installable shell + offline app shell)
 
-**Live app:** _add your GitHub Pages link here after the first deploy_
-**Repository:** _add your GitHub repository link here_
+**Live app:** _added in a later week (GitHub Pages — HTTPS deploy)_
+**Repository:** https://github.com/NuraiymYerzhanova/field-journal
 
 ---
 

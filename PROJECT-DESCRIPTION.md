@@ -35,5 +35,5 @@ stored on the device, so the journal — and the app itself — works fully **of
 - **Week 4:** geolocation — tag and display entry location.
 - **Week 5:** polish, accessibility, Lighthouse performance pass, HTTPS deployment.
 
-**Repository:** _<add GitHub link>_
-**Live app:** _<add GitHub Pages link>_
+**Repository:** https://github.com/NuraiymYerzhanova/field-journal
+**Live app:** _added in a later week (GitHub Pages — HTTPS)_
