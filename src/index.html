@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Responsive: scale to the device width so the layout adapts to any screen -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>Field Journal</title>
+  <meta name="description" content="A personal field journal PWA. Capture notes with a photo and your location, even offline." />
+
+  <!-- PWA metadata: lets the browser offer "Add to Home Screen" -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0d9488" />
+
+  <!-- iOS / Safari install support -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Field Journal" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Offline/online banner. Hidden by default; app.js toggles the 'offline' class -->
+  <div id="connection-banner" class="banner" role="status" aria-live="polite" hidden>
+    You are offline — showing saved content.
+  </div>
+
+  <header class="app-header">
+    <h1 class="app-title">Field&nbsp;Journal</h1>
+  </header>
+
+  <!-- The single place where each "view" is rendered. The router swaps its content. -->
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <!-- Bottom navigation: three views with a consistent flow -->
+  <nav class="tabbar" aria-label="Main navigation">
+    <a href="#/" class="tab" data-tab="home">
+      <span class="tab-icon" aria-hidden="true">&#9776;</span>
+      <span class="tab-label">Journal</span>
+    </a>
+    <a href="#/new" class="tab" data-tab="new">
+      <span class="tab-icon" aria-hidden="true">&#43;</span>
+      <span class="tab-label">New Entry</span>
+    </a>
+    <a href="#/about" class="tab" data-tab="about">
+      <span class="tab-icon" aria-hidden="true">&#9432;</span>
+      <span class="tab-label">About</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
